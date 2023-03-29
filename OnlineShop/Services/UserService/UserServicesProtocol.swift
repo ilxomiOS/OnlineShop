@@ -1,0 +1,13 @@
+//
+//  UserServicesProtocol.swift
+//  OnlineShop
+//
+//  Created by Ilxom on 16/03/23.
+//
+
+import Foundation
+
+protocol UserServicesProtocol {
+	func saveUser(userEntity: UserEntity) throws
+	func fetchUser() throws -> [User]?
+}
