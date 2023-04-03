@@ -1,5 +1,5 @@
 //
-//  TabBar.swift
+//  TabBarController.swift
 //  OnlineShop
 //
 //  Created by Ilxom on 17/03/23.
@@ -17,8 +17,20 @@ enum Tabs: Int, CaseIterable {
 
 final class TabBar: UITabBarController {
 	
+	let circleView = UIView(frame: CGRect(x: 0, y: 0, width: 38, height: 38))
+	
+	var selectedTab: Int = 0 {
+		didSet {
+			let xPosition = self.tabBar.frame.width / CGFloat(self.viewControllers!.count) * CGFloat(selectedIndex) + self.tabBar.frame.width / CGFloat(self.viewControllers!.count) / 2 - circleView.frame.width / 2
+			UIView.animate(withDuration: 0.3) {
+				self.circleView.frame.origin.x = xPosition
+			}
+		}
+	}
+	
 	override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
 		super.init(nibName: nil, bundle: nil)
+		self.delegate = self
 		configureAppearance()
 	}
 	
@@ -27,10 +39,10 @@ final class TabBar: UITabBarController {
 	}
 	
 	private func configureAppearance() {
+		self.tabBar.addSubview(circleView)
+		
 		let newHeight: CGFloat = 100
-	
 		let roundedLayer = CAShapeLayer()
-
 		let bezierPath = UIBezierPath(
 			roundedRect: CGRect(
 				x: tabBar.bounds.origin.x,
@@ -52,6 +64,10 @@ final class TabBar: UITabBarController {
 			return controller
 		}
 		
+		circleView.layer.cornerRadius = 20
+		circleView.backgroundColor =  Resources.Colors.tabBarCircleBackgroundColor
+		circleView.frame.origin.x = self.tabBar.frame.width / CGFloat(controllers.count) / 2 - circleView.frame.width / 2
+		
 		setViewControllers(controllers, animated: true)
 	}
 	
@@ -65,4 +81,10 @@ final class TabBar: UITabBarController {
 		}
 	}
 	
+}
+
+extension TabBar: UITabBarControllerDelegate {
+	func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+		self.selectedTab = tabBarController.selectedIndex
+	}
 }

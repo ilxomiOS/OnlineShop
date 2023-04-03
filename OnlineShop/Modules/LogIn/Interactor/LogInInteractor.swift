@@ -49,7 +49,8 @@ extension LogInInteractor: LogInInteractorInput {
 		do {
 			try validUserCredential(firstName: firstName, password: password)
 			
-			if let _ = try userService.fetchUser()?.first(where: { $0.firstName == firstName }) {
+			if let user = try userService.fetchUser()?.first(where: { $0.firstName == firstName }) {
+				userService.setLoggedInUser(user)
 				presenter?.didLogInCompleted()
 			} else {
 				presenter?.onError(message: AuthError.userDoesntExist.localizedDescription)

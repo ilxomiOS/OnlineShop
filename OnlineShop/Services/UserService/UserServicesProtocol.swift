@@ -8,6 +8,8 @@
 import Foundation
 
 protocol UserServicesProtocol {
-	func saveUser(userEntity: UserEntity) throws
+	var userLoggedIn: User? { get set }
+	func setLoggedInUser(_ user: User)
+	func saveUser(userEntity: UserEntity) throws -> User
 	func fetchUser() throws -> [User]?
 }

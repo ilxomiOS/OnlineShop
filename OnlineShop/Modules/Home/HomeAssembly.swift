@@ -19,6 +19,9 @@ enum HomeAssembly {
 		presenter.view = view
 		router.view = view
 		
+		view.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "navicon"), style: .done, target: nil, action: nil)
+		view.navigationItem.leftBarButtonItem?.tintColor = .black
+		
 		return view
 	}
 	

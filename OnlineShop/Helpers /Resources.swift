@@ -17,6 +17,7 @@ enum Resources {
 		static let secondaryLabelColor = UIColor(hexString: "#808080")
 		static let secondaryButtonTitleColor = UIColor(hexString: "#254FE6")
 		static let tabBarTint = UIColor(hexString: "#737297")
+		static let tabBarCircleBackgroundColor = UIColor(hexString: "EEEFF4")
 	}
 	
 	enum Strings {

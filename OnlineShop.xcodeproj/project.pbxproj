@@ -70,7 +70,7 @@
 		2EE335BD29BF026B00DBB711 /* SignInRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE335BC29BF026B00DBB711 /* SignInRouterInput.swift */; };
 		2EF13E2929C432A900BB33E7 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF13E2829C432A900BB33E7 /* PasswordTextField.swift */; };
 		2EF13E2B29C47C3B00BB33E7 /* UIButton + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF13E2A29C47C3B00BB33E7 /* UIButton + Ext.swift */; };
-		2EF13E2E29C482F000BB33E7 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF13E2D29C482F000BB33E7 /* TabBar.swift */; };
+		2EF13E2E29C482F000BB33E7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF13E2D29C482F000BB33E7 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,7 +139,7 @@
 		2EE335BC29BF026B00DBB711 /* SignInRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouterInput.swift; sourceTree = "<group>"; };
 		2EF13E2829C432A900BB33E7 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		2EF13E2A29C47C3B00BB33E7 /* UIButton + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Ext.swift"; sourceTree = "<group>"; };
-		2EF13E2D29C482F000BB33E7 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		2EF13E2D29C482F000BB33E7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -516,7 +516,7 @@
 		2EF13E2C29C482DB00BB33E7 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				2EF13E2D29C482F000BB33E7 /* TabBar.swift */,
+				2EF13E2D29C482F000BB33E7 /* TabBarController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -619,7 +619,7 @@
 				2EE335AF29BF019700DBB711 /* SignInAssembly.swift in Sources */,
 				2EDEDDF529D2E4000073083B /* FlashSale.swift in Sources */,
 				2EDD3ADB29C347B4009AB841 /* HomeInteractorOutput.swift in Sources */,
-				2EF13E2E29C482F000BB33E7 /* TabBar.swift in Sources */,
+				2EF13E2E29C482F000BB33E7 /* TabBarController.swift in Sources */,
 				2EDD3AD929C347A8009AB841 /* HomeInteractorInput.swift in Sources */,
 				2EDEDDF329D2E3F80073083B /* Latest.swift in Sources */,
 				2EDD3AE029C3482B009AB841 /* HomePresenterInput.swift in Sources */,

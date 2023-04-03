@@ -56,7 +56,8 @@ extension SignInInteractor: SignInInteractorInput {
 			}
 			
 			let userEntity = UserEntity(firstName: firstName, lastName: lastName, email: email)
-			try userService.saveUser(userEntity: userEntity)
+			let user = try userService.saveUser(userEntity: userEntity)
+			userService.setLoggedInUser(user)
 			
 			presenter?.didSignInCompleted()
 		} catch {
