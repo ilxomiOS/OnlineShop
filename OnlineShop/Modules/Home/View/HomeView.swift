@@ -11,7 +11,7 @@ class HomeView: UIView {
 
 	init() {
 		super.init(frame: .zero)
-		backgroundColor = .cyan
+		backgroundColor = .white
 	}
 	
 	required init?(coder: NSCoder) {

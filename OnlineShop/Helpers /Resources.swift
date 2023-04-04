@@ -18,6 +18,8 @@ enum Resources {
 		static let secondaryButtonTitleColor = UIColor(hexString: "#254FE6")
 		static let tabBarTint = UIColor(hexString: "#737297")
 		static let tabBarCircleBackgroundColor = UIColor(hexString: "EEEFF4")
+		static let homeViewTitleColor = UIColor(hexString: "4E55D7")
+		static let profileImageBorderColor = UIColor(hexString: "4E4D4D")
 	}
 	
 	enum Strings {
@@ -38,6 +40,11 @@ enum Resources {
 			static let firstName = "First name"
 			static let password = "Password"
 		}
+		
+		enum HomeStrings {
+			static let navTitle = "Trade by bata"
+		}
+		
 	}
 	
 	enum Images {
