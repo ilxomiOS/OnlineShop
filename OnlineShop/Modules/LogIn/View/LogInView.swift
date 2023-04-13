@@ -50,7 +50,7 @@ private extension LogInView {
 	
 	func configureSubviews() {
 		headerLabel.text = Resources.Strings.LoginStrings.header
-		headerLabel.textColor = Resources.Colors.headerLabelColor
+		headerLabel.textColor = Resources.Colors.title
 		headerLabel.font = Resources.Fonts.montserratSemiBold(with: 26)
 		
 		firstNameTextField.backgroundColor = Resources.Colors.textFieldBackgroundColor

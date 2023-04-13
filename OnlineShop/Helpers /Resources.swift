@@ -10,7 +10,7 @@ import UIKit
 enum Resources {
 	
 	enum Colors {
-		static let headerLabelColor = UIColor(hexString: "#161826")
+		static let title = UIColor(hexString: "#161826")
 		static let textFieldBackgroundColor = UIColor(hexString: "#E8E8E8")
 		static let buttonBackgroundColor = UIColor(hexString: "#4E55D7")
 		static let buttonTitleColor = UIColor(hexString: "#EAEAEA")
@@ -20,6 +20,7 @@ enum Resources {
 		static let tabBarCircleBackgroundColor = UIColor(hexString: "EEEFF4")
 		static let homeViewTitleColor = UIColor(hexString: "4E55D7")
 		static let profileImageBorderColor = UIColor(hexString: "4E4D4D")
+		static let searchTFBackgroundColor = UIColor(hexString: "F5F6F6")
 	}
 	
 	enum Strings {
@@ -43,6 +44,7 @@ enum Resources {
 		
 		enum HomeStrings {
 			static let navTitle = "Trade by bata"
+			static let searchTFplaceHolder = "What are you looking for ?"
 		}
 		
 	}
@@ -77,6 +79,10 @@ enum Resources {
 		
 		static func montserratSemiBold(with size: CGFloat) -> UIFont {
 			UIFont(name: "Montserrat-SemiBold", size: size) ?? UIFont()
+		}
+		
+		static func montserratRegular(with size: CGFloat) -> UIFont {
+			UIFont(name: "Montserrat-Regular", size: size) ?? UIFont()
 		}
 	}
 	

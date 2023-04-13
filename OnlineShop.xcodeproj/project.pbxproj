@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E21F5E429E54C0A00603268 /* LocationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21F5E329E54C0A00603268 /* LocationButton.swift */; };
 		2E54BE0129C0A0200018D99F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54BE0029C0A0200018D99F /* CoreDataManager.swift */; };
 		2E54BE0429C0A3A80018D99F /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54BE0329C0A3A80018D99F /* UserServices.swift */; };
 		2E54BE0729C0A3DF0018D99F /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54BE0629C0A3DF0018D99F /* UserEntity.swift */; };
 		2E54BE0B29C0A97D0018D99F /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54BE0929C0A97D0018D99F /* User+CoreDataClass.swift */; };
 		2E54BE0C29C0A97D0018D99F /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54BE0A29C0A97D0018D99F /* User+CoreDataProperties.swift */; };
+		2E7820C029E7E2C50025051A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7820BF29E7E28E0025051A /* Montserrat-Regular.ttf */; };
+		2E7820C229E7EA620025051A /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7820C129E7EA620025051A /* SearchTextField.swift */; };
 		2E95749B29BC5BF40090D6C5 /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E95749929BC5BF40090D6C5 /* User.xcdatamodeld */; };
 		2EB9951D29BB0FA7004C1901 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9951C29BB0FA7004C1901 /* AppDelegate.swift */; };
 		2EB9951F29BB0FA7004C1901 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9951E29BB0FA7004C1901 /* SceneDelegate.swift */; };
@@ -74,11 +77,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E21F5E329E54C0A00603268 /* LocationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationButton.swift; sourceTree = "<group>"; };
 		2E54BE0029C0A0200018D99F /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		2E54BE0329C0A3A80018D99F /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
 		2E54BE0629C0A3DF0018D99F /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		2E54BE0929C0A97D0018D99F /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2E54BE0A29C0A97D0018D99F /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2E7820BF29E7E28E0025051A /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		2E7820C129E7EA620025051A /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		2E95749A29BC5BF40090D6C5 /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
 		2EB9951929BB0FA7004C1901 /* OnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EB9951C29BB0FA7004C1901 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +159,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E21F5E229E54BFB00603268 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				2E21F5E329E54C0A00603268 /* LocationButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		2E54BDFF29C0A00B0018D99F /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +319,7 @@
 		2EB9956D29BB2A6F004C1901 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				2E7820BF29E7E28E0025051A /* Montserrat-Regular.ttf */,
 				2EB9956E29BB2AD7004C1901 /* Montserrat-Bold.ttf */,
 				2EB9957029BB2AD7004C1901 /* Montserrat-Medium.ttf */,
 				2EB9956F29BB2AD7004C1901 /* Montserrat-SemiBold.ttf */,
@@ -499,6 +514,7 @@
 		2EF13E2629C4327F00BB33E7 /* CustomVIews */ = {
 			isa = PBXGroup;
 			children = (
+				2E21F5E229E54BFB00603268 /* Buttons */,
 				2EF13E2C29C482DB00BB33E7 /* TabBar */,
 				2EF13E2729C4329500BB33E7 /* TextFields */,
 			);
@@ -509,6 +525,7 @@
 			isa = PBXGroup;
 			children = (
 				2EF13E2829C432A900BB33E7 /* PasswordTextField.swift */,
+				2E7820C129E7EA620025051A /* SearchTextField.swift */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
@@ -579,6 +596,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7820C029E7E2C50025051A /* Montserrat-Regular.ttf in Resources */,
 				2ED0405729D4134200198E0B /* README.md in Resources */,
 				2EB9952929BB0FAB004C1901 /* LaunchScreen.storyboard in Resources */,
 				2EB9957329BB2AD7004C1901 /* Montserrat-Medium.ttf in Resources */,
@@ -630,12 +648,14 @@
 				2EDD3ADE29C3481E009AB841 /* HomePresenter.swift in Sources */,
 				2EDD3AC829C317A4009AB841 /* LoginRouterInput.swift in Sources */,
 				2EB9953929BB1367004C1901 /* SignInInteractor.swift in Sources */,
+				2E7820C229E7EA620025051A /* SearchTextField.swift in Sources */,
 				2EB9957A29BB2FCD004C1901 /* Resources.swift in Sources */,
 				2EB9951D29BB0FA7004C1901 /* AppDelegate.swift in Sources */,
 				2EB9951F29BB0FA7004C1901 /* SceneDelegate.swift in Sources */,
 				2EDD3AC229C316F2009AB841 /* LogInInteractor.swift in Sources */,
 				2E54BE0B29C0A97D0018D99F /* User+CoreDataClass.swift in Sources */,
 				2EF13E2B29C47C3B00BB33E7 /* UIButton + Ext.swift in Sources */,
+				2E21F5E429E54C0A00603268 /* LocationButton.swift in Sources */,
 				2EDEDDEE29D2DEBF0073083B /* HTTPMethod.swift in Sources */,
 				2EDD3AE229C34831009AB841 /* HomePresenterOutput.swift in Sources */,
 				2EB9953529BB134C004C1901 /* SignInViewController.swift in Sources */,
